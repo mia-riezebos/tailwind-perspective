@@ -1,6 +1,6 @@
 import plugin from "tailwindcss/plugin";
 
-export const perspective = plugin(
+export default plugin(
         function ({ addBase, addUtilities, matchUtilities, theme }) {
                 addBase({
                         "*, ::before, ::after": {
@@ -319,4 +319,3 @@ export const perspective = plugin(
         }
 );
 
-export default perspective;

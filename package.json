@@ -1,8 +1,9 @@
 {
         "name": "tailwind-perspective",
-        "version": "1.0.0-2",
+        "version": "1.0.0-3",
         "description": "a tailwind plugin that adds 3d transform and perspective utilities, as well as some extended spacing values based on fractions",
         "main": "dist/index.js",
+        "types": "dist/index.d.ts",
         "scripts": {
                 "build": "tsc --removeComments",
                 "release": "pnpm build && release-it"
@@ -26,6 +27,9 @@
                 "url": "https://github.com/mia-cx/tailwind-perspective/issues"
         },
         "homepage": "https://github.com/mia-cx/tailwind-perspective#readme",
+        "peerDependencies": {
+                "tailwindcss": ">=3.2.0"
+        },
         "devDependencies": {
                 "@types/node": "^18.15.3",
                 "prettier": "^2.8.4",
