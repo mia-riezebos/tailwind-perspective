@@ -5,7 +5,9 @@ I was a little disappointed that tailwind didn't natively support 3d transforms,
 ## Installation
 
 ```pnpm i -D tailwind-perspective```
+
 ```yarn add -D tailwind-perspective```
+
 ```npm i -D tailwind-perspective```
 
 ## Usage
