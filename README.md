@@ -12,4 +12,5 @@ I was a little disappointed that tailwind didn't natively support 3d transforms,
 
 Coming at some point (busy with big projects)
 
-[License](/LICENSE)
+---
+[License (MIT)](/LICENSE)
