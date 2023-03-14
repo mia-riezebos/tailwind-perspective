@@ -1,6 +1,6 @@
 {
         "name": "tailwind-perspective",
-        "version": "1.0.0-1",
+        "version": "1.0.0-2",
         "description": "a tailwind plugin that adds 3d transform and perspective utilities, as well as some extended spacing values based on fractions",
         "main": "dist/index.js",
         "scripts": {
