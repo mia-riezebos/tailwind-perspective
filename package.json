@@ -6,7 +6,8 @@
         "types": "dist/index.d.ts",
         "scripts": {
                 "build": "tsc --removeComments",
-                "release": "pnpm build && release-it"
+                "release": "pnpm build && release-it",
+                "prepublish": "pnpm build"
         },
         "repository": {
                 "type": "git",
