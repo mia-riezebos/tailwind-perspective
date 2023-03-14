@@ -1,6 +1,6 @@
 import plugin from "tailwindcss/plugin";
 
-export default plugin(
+export = plugin(
         function ({ addBase, addUtilities, matchUtilities, theme }) {
                 addBase({
                         "*, ::before, ::after": {
