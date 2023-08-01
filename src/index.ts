@@ -4,30 +4,30 @@ export = plugin(
         function ({ addBase, addUtilities, matchUtilities, theme }) {
                 addBase({
                         "*, ::before, ::after": {
-                                "--tw-translate-x": "0",
-                                "--tw-translate-y": "0",
-                                "--tw-translate-z": "0",
-                                "--tw-rotate-x": "0",
-                                "--tw-rotate-y": "0",
-                                "--tw-rotate-z": "0",
-                                "--tw-skew-x": "0",
-                                "--tw-skew-y": "0",
-                                "--tw-scale-x": "1",
-                                "--tw-scale-y": "1",
-                                "--tw-scale-z": "1",
-                                // '--tw-self-perspective': '0',
-                                "--tw-transform": [
-                                        "translateX(var(--tw-translate-x))",
-                                        "translateY(var(--tw-translate-y))",
-                                        "translateZ(var(--tw-translate-z))",
-                                        "rotateX(var(--tw-rotate-x))",
-                                        "rotateY(var(--tw-rotate-y))",
-                                        "rotateZ(var(--tw-rotate-z))",
-                                        "scaleX(var(--tw-scale-x))",
-                                        "scaleY(var(--tw-scale-y))",
-                                        "scaleZ(var(--tw-scale-z))",
-                                        "skewX(var(--tw-skew-x))",
-                                        "skewY(var(--tw-skew-y))",
+                                "--twp-translate-x": "0",
+                                "--twp-translate-y": "0",
+                                "--twp-translate-z": "0",
+                                "--twp-rotate-x": "0",
+                                "--twp-rotate-y": "0",
+                                "--twp-rotate-z": "0",
+                                "--twp-skew-x": "0",
+                                "--twp-skew-y": "0",
+                                "--twp-scale-x": "1",
+                                "--twp-scale-y": "1",
+                                "--twp-scale-z": "1",
+                                // '--twp-self-perspective': '0',
+                                "--twp-transform": [
+                                        "translateX(var(--twp-translate-x))",
+                                        "translateY(var(--twp-translate-y))",
+                                        "translateZ(var(--twp-translate-z))",
+                                        "rotateX(var(--twp-rotate-x))",
+                                        "rotateY(var(--twp-rotate-y))",
+                                        "rotateZ(var(--twp-rotate-z))",
+                                        "scaleX(var(--twp-scale-x))",
+                                        "scaleY(var(--twp-scale-y))",
+                                        "scaleZ(var(--twp-scale-z))",
+                                        "skewX(var(--twp-skew-x))",
+                                        "skewY(var(--twp-skew-y))",
                                 ].join(" "),
                         },
                 });
@@ -54,7 +54,7 @@ export = plugin(
                         ".transform-3d-none": { transform: "none" },
                         // '.transform-3d': {
                         //     '@defaults transform': {},
-                        //     transform: 'var(--tw-transform)',
+                        //     transform: 'var(--twp-transform)',
                         // }
                 });
 
@@ -72,7 +72,7 @@ export = plugin(
                 matchUtilities(
                         {
                                 perspective: (value) => ({
-                                        "--tw-perspective": value,
+                                        "--twp-perspective": value,
                                         "-webkit-perspective": value,
                                         perspective: value,
                                 }),
@@ -90,17 +90,17 @@ export = plugin(
                 // Translate Utilities
                 matchUtilities(
                         {
-                                "translate-x": (value) => ({
-                                        "--tw-translate-x": value,
-                                        transform: "var(--tw-transform)",
+                                "twp-translate-x": (value) => ({
+                                        "--twp-translate-x": value,
+                                        transform: "var(--twp-transform)",
                                 }),
-                                "translate-y": (value) => ({
-                                        "--tw-translate-y": value,
-                                        transform: "var(--tw-transform)",
+                                "twp-translate-y": (value) => ({
+                                        "--twp-translate-y": value,
+                                        transform: "var(--twp-transform)",
                                 }),
-                                "translate-z": (value) => ({
-                                        "--tw-translate-z": value,
-                                        transform: "var(--tw-transform)",
+                                "twp-translate-z": (value) => ({
+                                        "--twp-translate-z": value,
+                                        transform: "var(--twp-transform)",
                                 }),
                         },
                         {
@@ -113,21 +113,21 @@ export = plugin(
                 // Rotate Utilities
                 matchUtilities(
                         {
-                                "rotate-x": (value) => ({
-                                        "--tw-rotate-x": value,
-                                        transform: "var(--tw-transform)",
+                                "twp-rotate-x": (value) => ({
+                                        "--twp-rotate-x": value,
+                                        transform: "var(--twp-transform)",
                                 }),
-                                "rotate-y": (value) => ({
-                                        "--tw-rotate-y": value,
-                                        transform: "var(--tw-transform)",
+                                "twp-rotate-y": (value) => ({
+                                        "--twp-rotate-y": value,
+                                        transform: "var(--twp-transform)",
                                 }),
-                                "rotate-z": (value) => ({
-                                        "--tw-rotate-z": value,
-                                        transform: "var(--tw-transform)",
+                                "twp-rotate-z": (value) => ({
+                                        "--twp-rotate-z": value,
+                                        transform: "var(--twp-transform)",
                                 }),
                                 rotate: (value) => ({
-                                        "--tw-rotate-z": value,
-                                        transform: "var(--tw-transform)",
+                                        "--twp-rotate-z": value,
+                                        transform: "var(--twp-transform)",
                                 }),
                         },
                         {
@@ -140,17 +140,17 @@ export = plugin(
                 // Scale Utilities
                 matchUtilities(
                         {
-                                "scale-x": (value) => ({
-                                        "--tw-scale-x": value,
-                                        transform: "var(--tw-transform)",
+                                "twp-scale-x": (value) => ({
+                                        "--twp-scale-x": value,
+                                        transform: "var(--twp-transform)",
                                 }),
-                                "scale-y": (value) => ({
-                                        "--tw-scale-y": value,
-                                        transform: "var(--tw-transform)",
+                                "twp-scale-y": (value) => ({
+                                        "--twp-scale-y": value,
+                                        transform: "var(--twp-transform)",
                                 }),
-                                "scale-z": (value) => ({
-                                        "--tw-scale-z": value,
-                                        transform: "var(--tw-transform)",
+                                "twp-scale-z": (value) => ({
+                                        "--twp-scale-z": value,
+                                        transform: "var(--twp-transform)",
                                 }),
                         },
                         {
@@ -163,13 +163,13 @@ export = plugin(
                 // Skew Utilities
                 matchUtilities(
                         {
-                                "skew-x": (value) => ({
-                                        "--tw-skew-x": value,
-                                        transform: "var(--tw-transform)",
+                                "twp-skew-x": (value) => ({
+                                        "--twp-skew-x": value,
+                                        transform: "var(--twp-transform)",
                                 }),
-                                "skew-y": (value) => ({
-                                        "--tw-skew-y": value,
-                                        transform: "var(--tw-transform)",
+                                "twp-skew-y": (value) => ({
+                                        "--twp-skew-y": value,
+                                        transform: "var(--twp-transform)",
                                 }),
                         },
                         {
