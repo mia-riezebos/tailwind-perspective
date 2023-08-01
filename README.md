@@ -16,6 +16,7 @@ npm i -D tailwind-perspective
 
 ## Usage
 
+Please note that all utilities from tailwind-perspective are prefixed with `twp-`.
 Coming at some point (busy with big projects)
 
 ---
